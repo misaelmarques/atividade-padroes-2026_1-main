@@ -8,7 +8,7 @@ public interface EsportesUIFactory {
     static EsportesUIFactory getFactory(String marca){
         return switch (marca.toLowerCase()){
             case "adidas" -> new Adidas();
-            //case "nike" -> new Nike();
+            case "nike" -> new Nike();
             default -> throw new IllegalArgumentException("Marca Informada Incorreta: " + marca);
         };
     }
